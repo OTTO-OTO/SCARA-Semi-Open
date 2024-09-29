@@ -4,7 +4,12 @@ Welcome to the repository for "Archilles' Heel in Semi-open LLMs: Hiding Bottom 
 
 ## Repository Info
 
-Within the EX-Priv folder, you will find our training code and the specific algorithm for EX-Priv. Given the multitude of models, we only demonstrate the practical application of EX-Priv in the Llama2-7B here, along with the specific training code for the 7 models used in our experiments.
+This repository contains a total of four folders:
+
+* **Benchmarks**: We have listed the LawEvaluation code we used. Specifically, we use perplexity to evaluate the model's performance.
+* **Customization**: During the Customization phase, we utilized the Llama Factory repository. Therefore, we provide the YAML files and corresponding configurations used for training.
+* **SCARA**: We provide the code for calculating Recovery Difficulty, which is used to implement the functionality of SCARA.
+* **Semi-openRecovery**: We provide the code for implementing Semi-open model Recovery, along with the verification code for the specific transition layer.
 
 ## Installation
 
@@ -12,15 +17,15 @@ Within the EX-Priv folder, you will find our training code and the specific algo
 pip install -r requirements.txt
 ```
 
-## Running the Experiments
+## Run the Semi-open Model Recovery
 
-1. **Running the EX-Priv Algorithm**: If you want to run the EX-Priv algorithm, you can use the provided bash script:
+1. **Running the EX-Priv Algorithm**: If you want to run the SCARA algorithm, you can use the provided bash script in SCARA folder:
 
     ```bash
-    bash runEX_Priv-Llama.sh
+    bash runSCARA-Llama.sh
     ```
 
-2. **Replicating Our Training Experiments**: To replicate our experiments on training models, you can execute the following command:
+2. **Replicating Our Training Experiments**: To replicate our experiments on training models, you can execute the following command in Semi-openRecovery folder:
 
     ```bash
     torchrun --nnodes 1 --nproc_per_node 4 --master_port=25001 SFT-Llama2.py \
