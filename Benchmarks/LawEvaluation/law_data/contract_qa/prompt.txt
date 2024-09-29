@@ -1,0 +1,5 @@
+Answer the question with Yes or No.
+
+Clause: {text}
+Question: {question}
+Label:

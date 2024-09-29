@@ -1,0 +1,4 @@
+Identify if the clause provides that the Receiving Party shall not disclose the fact that Agreement was agreed or negotiated. Answer with Yes or No.
+
+Clause: {}
+Label:

@@ -1,0 +1,4 @@
+Hearsay is an out-of-court statement introduced to prove the truth of the matter asserted. Answer with Yes or No.
+
+Q: {} Is there hearsay?
+A:

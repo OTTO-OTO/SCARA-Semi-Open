@@ -1,0 +1,4 @@
+Identify if the sentence defines a term. Answer with Yes or No.
+
+Sentence: {}
+Label:

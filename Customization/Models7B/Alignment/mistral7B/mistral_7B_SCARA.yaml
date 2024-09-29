@@ -1,0 +1,49 @@
+### model
+model_name_or_path: /mnt/userData/geminiNfsData/pavostor/gemini/traindata/gowrg4xcai7c/393415872535859200/mistral-7B
+
+### method
+stage: dpo
+do_train: true
+finetuning_type: lora
+lora_target: layers.1.self_attn.k_proj,layers.1.self_attn.q_proj,layers.1.self_attn.v_proj,layers.1.self_attn.o_proj,layers.1.mlp.gate_proj,layers.1.mlp.up_proj,layers.1.mlp.down_proj,layers.2.self_attn.k_proj,layers.2.self_attn.q_proj,layers.2.self_attn.v_proj,layers.2.self_attn.o_proj,layers.2.mlp.gate_proj,layers.2.mlp.up_proj,layers.2.mlp.down_proj,layers.3.self_attn.k_proj,layers.3.self_attn.q_proj,layers.3.self_attn.v_proj,layers.3.self_attn.o_proj,layers.3.mlp.gate_proj,layers.3.mlp.up_proj,layers.3.mlp.down_proj,layers.4.self_attn.k_proj,layers.4.self_attn.q_proj,layers.4.self_attn.v_proj,layers.4.self_attn.o_proj,layers.4.mlp.gate_proj,layers.4.mlp.up_proj,layers.4.mlp.down_proj,layers.5.self_attn.k_proj,layers.5.self_attn.q_proj,layers.5.self_attn.v_proj,layers.5.self_attn.o_proj,layers.5.mlp.gate_proj,layers.5.mlp.up_proj,layers.5.mlp.down_proj,layers.6.self_attn.k_proj,layers.6.self_attn.q_proj,layers.6.self_attn.v_proj,layers.6.self_attn.o_proj,layers.6.mlp.gate_proj,layers.6.mlp.up_proj,layers.6.mlp.down_proj,layers.7.self_attn.k_proj,layers.7.self_attn.q_proj,layers.7.self_attn.v_proj,layers.7.self_attn.o_proj,layers.7.mlp.gate_proj,layers.7.mlp.up_proj,layers.7.mlp.down_proj,layers.8.self_attn.k_proj,layers.8.self_attn.q_proj,layers.8.self_attn.v_proj,layers.8.self_attn.o_proj,layers.8.mlp.gate_proj,layers.8.mlp.up_proj,layers.8.mlp.down_proj,layers.9.self_attn.k_proj,layers.9.self_attn.q_proj,layers.9.self_attn.v_proj,layers.9.self_attn.o_proj,layers.9.mlp.gate_proj,layers.9.mlp.up_proj,layers.9.mlp.down_proj,layers.10.self_attn.k_proj,layers.10.self_attn.q_proj,layers.10.self_attn.v_proj,layers.10.self_attn.o_proj,layers.10.mlp.gate_proj,layers.10.mlp.up_proj,layers.10.mlp.down_proj,layers.11.self_attn.k_proj,layers.11.self_attn.q_proj,layers.11.self_attn.v_proj,layers.11.self_attn.o_proj,layers.11.mlp.gate_proj,layers.11.mlp.up_proj,layers.11.mlp.down_proj,layers.12.self_attn.k_proj,layers.12.self_attn.q_proj,layers.12.self_attn.v_proj,layers.12.self_attn.o_proj,layers.12.mlp.gate_proj,layers.12.mlp.up_proj,layers.12.mlp.down_proj,layers.13.self_attn.k_proj,layers.13.self_attn.q_proj,layers.13.self_attn.v_proj,layers.13.self_attn.o_proj,layers.13.mlp.gate_proj,layers.13.mlp.up_proj,layers.13.mlp.down_proj,layers.14.self_attn.k_proj,layers.14.self_attn.q_proj,layers.14.self_attn.v_proj,layers.14.self_attn.o_proj,layers.14.mlp.gate_proj,layers.14.mlp.up_proj,layers.14.mlp.down_proj,layers.15.self_attn.k_proj,layers.15.self_attn.q_proj,layers.15.self_attn.v_proj,layers.15.self_attn.o_proj,layers.15.mlp.gate_proj,layers.15.mlp.up_proj,layers.15.mlp.down_proj,layers.16.self_attn.k_proj,layers.16.self_attn.q_proj,layers.16.self_attn.v_proj,layers.16.self_attn.o_proj,layers.16.mlp.gate_proj,layers.16.mlp.up_proj,layers.16.mlp.down_proj,layers.17.self_attn.k_proj,layers.17.self_attn.q_proj,layers.17.self_attn.v_proj,layers.17.self_attn.o_proj,layers.17.mlp.gate_proj,layers.17.mlp.up_proj,layers.17.mlp.down_proj,layers.18.self_attn.k_proj,layers.18.self_attn.q_proj,layers.18.self_attn.v_proj,layers.18.self_attn.o_proj,layers.18.mlp.gate_proj,layers.18.mlp.up_proj,layers.18.mlp.down_proj,layers.19.self_attn.k_proj,layers.19.self_attn.q_proj,layers.19.self_attn.v_proj,layers.19.self_attn.o_proj,layers.19.mlp.gate_proj,layers.19.mlp.up_proj,layers.19.mlp.down_proj,layers.20.self_attn.k_proj,layers.20.self_attn.q_proj,layers.20.self_attn.v_proj,layers.20.self_attn.o_proj,layers.20.mlp.gate_proj,layers.20.mlp.up_proj,layers.20.mlp.down_proj,layers.21.self_attn.k_proj,layers.21.self_attn.q_proj,layers.21.self_attn.v_proj,layers.21.self_attn.o_proj,layers.21.mlp.gate_proj,layers.21.mlp.up_proj,layers.21.mlp.down_proj,layers.22.self_attn.k_proj,layers.22.self_attn.q_proj,layers.22.self_attn.v_proj,layers.22.self_attn.o_proj,layers.22.mlp.gate_proj,layers.22.mlp.up_proj,layers.22.mlp.down_proj,layers.23.self_attn.k_proj,layers.23.self_attn.q_proj,layers.23.self_attn.v_proj,layers.23.self_attn.o_proj,layers.23.mlp.gate_proj,layers.23.mlp.up_proj,layers.23.mlp.down_proj,layers.24.self_attn.k_proj,layers.24.self_attn.q_proj,layers.24.self_attn.v_proj,layers.24.self_attn.o_proj,layers.24.mlp.gate_proj,layers.24.mlp.up_proj,layers.24.mlp.down_proj,layers.25.self_attn.k_proj,layers.25.self_attn.q_proj,layers.25.self_attn.v_proj,layers.25.self_attn.o_proj,layers.25.mlp.gate_proj,layers.25.mlp.up_proj,layers.25.mlp.down_proj,layers.26.self_attn.k_proj,layers.26.self_attn.q_proj,layers.26.self_attn.v_proj,layers.26.self_attn.o_proj,layers.26.mlp.gate_proj,layers.26.mlp.up_proj,layers.26.mlp.down_proj,layers.27.self_attn.k_proj,layers.27.self_attn.q_proj,layers.27.self_attn.v_proj,layers.27.self_attn.o_proj,layers.27.mlp.gate_proj,layers.27.mlp.up_proj,layers.27.mlp.down_proj,layers.28.self_attn.k_proj,layers.28.self_attn.q_proj,layers.28.self_attn.v_proj,layers.28.self_attn.o_proj,layers.28.mlp.gate_proj,layers.28.mlp.up_proj,layers.28.mlp.down_proj,layers.29.self_attn.k_proj,layers.29.self_attn.q_proj,layers.29.self_attn.v_proj,layers.29.self_attn.o_proj,layers.29.mlp.gate_proj,layers.29.mlp.up_proj,layers.29.mlp.down_proj,layers.30.self_attn.k_proj,layers.30.self_attn.q_proj,layers.30.self_attn.v_proj,layers.30.self_attn.o_proj,layers.30.mlp.gate_proj,layers.30.mlp.up_proj,layers.30.mlp.down_proj,layers.31.self_attn.k_proj,layers.31.self_attn.q_proj,layers.31.self_attn.v_proj,layers.31.self_attn.o_proj,layers.31.mlp.gate_proj,layers.31.mlp.up_proj,layers.31.mlp.down_proj
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+pref_beta: 2
+simpo_gamma: 1.0
+pref_loss: simpo  # [sigmoid (dpo), orpo, simpo]
+
+### ddp
+ddp_timeout: 180000000
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: ultraFeedBack
+template: mistral
+cutoff_len: 512
+max_samples: 100000000
+overwrite_cache: false
+preprocessing_num_workers: 8
+
+output_dir: /mnt/userData/geminiNfsData/pavostor/gemini/traindata/gowrg4xcai7c/393415872535859200/Customization-7Bs/mistral-lora/EX-Priv/mistral-7B-alignment-EX-Priv
+logging_steps: 10
+save_steps: 1000
+plot_loss: true
+overwrite_output_dir: true
+report_to: wandb
+run_name: Mistral-7B-alignment-Cust-lora-EX-Priv # 可选
+
+### train
+per_device_train_batch_size: 32
+gradient_accumulation_steps: 2
+learning_rate: 5.0e-7
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+bf16: true
+
+### eval
+val_size: 0.08
+per_device_eval_batch_size: 32
+eval_strategy: steps
+eval_steps: 1000

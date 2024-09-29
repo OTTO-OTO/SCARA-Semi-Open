@@ -1,0 +1,4 @@
+Identify if the clause provides that ome obligations of Agreement may survive termination of Agreement. Answer with Yes or No.
+
+Clause: {}
+Label:

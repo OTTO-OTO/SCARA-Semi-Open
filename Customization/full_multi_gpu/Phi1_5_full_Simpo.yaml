@@ -1,0 +1,46 @@
+### model
+model_name_or_path: /gemini/data-2/phi-1_5
+
+### method
+stage: dpo
+do_train: true
+finetuning_type: full
+pref_beta: 2
+simpo_gamma: 1.0
+pref_loss: simpo  # [sigmoid (dpo), orpo, simpo]
+
+### ddp
+ddp_timeout: 180000000
+# deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: ultraFeedBack
+template: phi
+cutoff_len: 512
+max_samples: 100000000
+overwrite_cache: false #false
+preprocessing_num_workers: 8
+
+### output
+output_dir: /gemini/data-2/Custmization_New/Phi1_5/alignemnt-whitebox
+logging_steps: 10
+save_steps: 2000
+plot_loss: true
+overwrite_output_dir: true
+report_to: wandb
+run_name: Cust-Alignment-whitebox
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-7
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+
+### eval
+val_size: 0.08
+per_device_eval_batch_size: 8
+eval_strategy: steps
+eval_steps: 1000

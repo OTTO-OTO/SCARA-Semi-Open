@@ -1,0 +1,4 @@
+Does the post discuss issues faced by people who run small businesses or nonprofits, including around incorporation, licenses, taxes, regulations, and other concerns. It also includes options when there are disasters, bankruptcies, or other problems? Answer with Yes or No.
+
+Post: {}
+Label:

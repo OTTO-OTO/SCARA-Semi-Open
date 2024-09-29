@@ -1,0 +1,4 @@
+Does the clause describe a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?  Answer with Yes or No.
+
+Clause: {}
+Label:
