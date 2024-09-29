@@ -7,7 +7,7 @@ Welcome to the repository for "Archilles' Heel in Semi-open LLMs: Hiding Bottom 
 This repository contains a total of four folders:
 
 * **Benchmarks**: We have listed the LawEvaluation code we used. Specifically, we use perplexity to evaluate the model's performance.
-* **Customization**: During the Customization phase, we utilized the Llama Factory repository. Therefore, we provide the YAML files and corresponding configurations used for training.
+* **Customization**: During the Customization phase, we utilized the Llama Factory repository(https://github.com/hiyouga/LLaMA-Factory). Therefore, we provide the YAML files and corresponding configurations used for training.
 * **SCARA**: We provide the code for calculating Recovery Difficulty, which is used to implement the functionality of SCARA.
 * **Semi-openRecovery**: We provide the code for implementing Semi-open model Recovery, along with the verification code for the specific transition layer.
 
