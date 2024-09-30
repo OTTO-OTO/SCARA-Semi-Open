@@ -23,7 +23,7 @@ overwrite_cache: false
 preprocessing_num_workers: 8
 
 ### output /gemini/data-2/mix-ckpt-70b/cust/math 
-output_dir: /gemini/data-2/Customization-7Bs/mistral-lora/EX-Priv/mistral-7B-medmcqa-exp
+output_dir: /gemini/data-2/Customization-7Bs/mistral-lora/SCARA/mistral-7B-medmcqa-exp
 logging_steps: 10
 save_steps: 1000
 plot_loss: true

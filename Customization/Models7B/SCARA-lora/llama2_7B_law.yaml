@@ -29,7 +29,7 @@ save_steps: 1000
 plot_loss: true
 overwrite_output_dir: true
 report_to: wandb
-run_name: Llama2-7B-legal-Cust-lora-exp # 可选
+run_name: Llama2-7B-legal-Cust-lora-SCARA # 可选
 
 ### train
 per_device_train_batch_size: 32
