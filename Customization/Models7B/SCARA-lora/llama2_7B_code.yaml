@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: /gemini/data-2/Customization-7Bs-merge/llama2-7B/EX-Priv/llama2-7B-code-exp
+model_name_or_path: /gemini/data-2/Customization-7Bs-merge/llama2-7B/SCARA/llama2-7B-code-exp
 
 ### method
 stage: sft
@@ -23,7 +23,7 @@ overwrite_cache: false
 preprocessing_num_workers: 8
 
 ### output /gemini/data-2/mix-ckpt-70b/cust/math 
-output_dir: /gemini/data-2/Customization-7Bs/Llama2-lora/EX-Priv/llama2-7B-code-exp-epoch3
+output_dir: /gemini/data-2/Customization-7Bs/Llama2-lora/SCARA/llama2-7B-code-exp-epoch3
 logging_steps: 10
 save_steps: 1000
 plot_loss: true

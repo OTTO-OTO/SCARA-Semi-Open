@@ -27,13 +27,13 @@ overwrite_cache: false
 preprocessing_num_workers: 8
 
 ### output /gemini/data-2/mix-ckpt-70b/cust/math
-output_dir: /gemini/data-1/LLaMA-Factory-main/lora_merges/qlora/EX-Priv/llama70-alignment-Ex-Priv
+output_dir: /gemini/data-1/LLaMA-Factory-main/lora_merges/qlora/SCARA/llama70-alignment-SCARA
 logging_steps: 10
 save_steps: 1000
 plot_loss: true
 overwrite_output_dir: true
 report_to: wandb
-run_name: Llama2-alignment-Cust-lora-Ex-Priv # 可选
+run_name: Llama2-alignment-Cust-lora-SCARA
 
 ### train
 per_device_train_batch_size: 4
