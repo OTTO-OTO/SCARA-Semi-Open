@@ -221,14 +221,14 @@ def main(**kwargs):
     full_priv_state_dict = full_priv.state_dict()
     # wrap the full privatized model
     full_priv = wrap_model_fsdp(full_priv, rank)
-    # calculate the resilience score of full privatization
+    # calculate the recovery difficulty of full privatization
     full_priv_score = RDCal(full_priv, train_config, train_dataloader, rank)
 
 
-    # initialize the resilience score of the grey-box model:
+    # initialize the recovery difficulty of the semi-open model:
     Score= -1
 
-    # load grey-box model
+    # load semi-open model
     for wipe_layers in range(1,llama_config.num_hidden_layers):
         clear_gpu_cache(local_rank)
 
