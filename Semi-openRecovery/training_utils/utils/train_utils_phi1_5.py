@@ -19,7 +19,7 @@ from transformers import LlamaTokenizer
 
 
 from training_utils.model_checkpointing import save_model_checkpoint, save_model_and_optimizer_sharded, save_optimizer_checkpoint
-from training_utils.policies import fpSixteen,bfSixteen_mixed, bfSixteen ,get_llama_wrapper, get_falcon_wrapper
+from training_utils.policies import fpSixteen,bfSixteen_mixed, bfSixteen ,get_llama_wrapper
 from training_utils.utils.memory_utils import MemoryTrace
 
 
@@ -473,7 +473,7 @@ def get_policies(cfg, rank):
         else:
             print(f"bFloat16 support not present. Using FP32, and not mixed precision")
     
-    wrapping_policy = get_falcon_wrapper()
+    wrapping_policy = get_llama_wrapper()
     return mixed_precision_policy, wrapping_policy
 
 def save_train_params(train_config, fsdp_config, rank):

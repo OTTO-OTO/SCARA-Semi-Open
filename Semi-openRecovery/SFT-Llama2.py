@@ -94,7 +94,6 @@ def main(**kwargs):
         "T_max": train_config.T_max,
         "eta_min": train_config.eta_min,
         'wipe_layers': train_config.wipe_layer,
-        'layer_start_point':train_config.layer_start_point,
         "pure_bf16": fsdp_config.pure_bf16,
         "fsdp_cpu_offload": fsdp_config.fsdp_cpu_offload,
         "optimizer": fsdp_config.optimizer,

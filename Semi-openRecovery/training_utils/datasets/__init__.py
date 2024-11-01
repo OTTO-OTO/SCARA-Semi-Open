@@ -5,4 +5,5 @@ from training_utils.datasets.grammar_dataset.grammar_dataset import get_dataset 
 from training_utils.datasets.alpaca_dataset import InstructionDataset as get_alpaca_dataset
 from training_utils.datasets.alpaca_dataset_minidatasets import InstructionDataset as get_alpaca_minidataset
 from training_utils.datasets.generalDataset import Template as getGen_dataset
+from training_utils.datasets.QA_dataset import QADataset as get_QA_dataset
 from training_utils.datasets.samsum_dataset import get_preprocessed_samsum as get_samsum_dataset
