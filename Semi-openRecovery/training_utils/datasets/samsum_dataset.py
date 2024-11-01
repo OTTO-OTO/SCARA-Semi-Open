@@ -5,7 +5,7 @@
 
 import datasets
 
-from llama_recipes.datasets.utils import Concatenator
+from training_utils.datasets.utils import Concatenator
 
 def get_preprocessed_samsum(dataset_config, tokenizer, split):
     dataset = datasets.load_dataset("samsum", split=split)

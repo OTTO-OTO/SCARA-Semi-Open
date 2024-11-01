@@ -4,4 +4,4 @@
 from training_utils.utils.memory_utils import MemoryTrace
 from training_utils.utils.dataset_utils import *
 from training_utils.utils.fsdp_utils import fsdp_auto_wrap_policy
-from training_utils.utils.train_utils import *
+from training_utils.utils.train_utils_llama import *
